@@ -26,13 +26,13 @@ const sportsBudget = 3000;
 
 // ### 題目三：變數計算
 // 呈上題，Alex 想要規劃好自己的運動課程，需符合以下三個條件，請將花費總數計算在 AlexBudget 上，一起幫幫他吧！
-let AlexBudget;
+let AlexBudget = 0;
 
 // 條件一：一定至少要買 1 堂重訓團課和瑜伽團課
 AlexBudget = sportsBudget - retrainingGroupClass - yogaGroupClass;
 
 // 條件二：瑜伽團課只能一次買 3 堂
-AlexBudget -= yogaGroupClass*2;
+AlexBudget = sportsBudget - retrainingGroupClass - yogaGroupClass*3;
 
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 AlexBudget -= retrainingOneOnOne;
@@ -49,8 +49,7 @@ let oneLesson = 180;
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
 // 情境：Alex 在往健身房的路上，望向城市的風景，請描述她看到的一切，並宣告變數與賦予值
 // 4-1. Alex 在等紅綠燈，他抬頭看一下現在是紅燈，還有 28 秒綠燈（最多 3 個宣告）
-const redLight = 'red';
-const greenLight = 'green';
+let trafficLight = 'red'
 let waitingTime = 28;
 // 4-2. 目前一起等待的機車有 8 台
 let waitingScooter = 8;
